@@ -1,0 +1,131 @@
+/* Theme Variables */
+:root {
+    --bg-color: black;
+    --text-color: white;
+    --header-bg: #3b3939;
+    --link-color: #de8909;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: var(--header-bg);
+    color: var(--text-color);
+}
+
+header a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.photo img {
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.theme-toggle {
+    padding: 8px 14px;
+    background: var(--link-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.theme-toggle:hover {
+    background: #ff9c2b;
+}
+
+.nav-bar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--header-bg);
+    height: 60px;
+}
+.nav-bar a {
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+.nav-bar a:hover {
+    background-color: #0d47a1;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.area {
+    background-color: var(--header-bg);
+    display: inline-block;
+    height: auto;
+    min-height: 300px;
+    width: 23%;
+    border: 2px solid #7f8082;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+h2 {
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    margin-top: 10px;
+    background: var(--header-bg);
+    color: var(--text-color);
+}
+
+/* Light Theme Variables */
+.light-theme {
+    --bg-color: white;
+    --text-color: black;
+    --header-bg: #f0f0f0;
+    --link-color: #0d47a1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .area {
+        width: 48%;
+    }
+}
+@media (max-width: 480px) {
+    .area {
+        width: 100%;
+    }
+}
